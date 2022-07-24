@@ -7,11 +7,14 @@ interface PesquisaProps {
     onSubmit?: () => {}
 }
 
+const inputIcon = <SearchIcon color='gray' />
+
 export default function Pesquisa(props: PesquisaProps) {
     return (
         <InputGroup>
             <Input placeholder='Pesquisar produto' />
-            <InputRightElement children={<SearchIcon color='gray' />} />
+            {/* eslint-disable-next-line react/no-children-prop */}
+            <InputRightElement children={inputIcon} />
         </InputGroup>
     )
 }

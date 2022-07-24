@@ -15,7 +15,7 @@ import { Pagination } from "swiper";
 import {Button} from "@chakra-ui/react";
 import Link from "next/link";
 
-export default () => {
+export default function Banner() {
     return (
         /*<Swiper
             slidesPerView={1}

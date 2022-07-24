@@ -1,6 +1,5 @@
 import Logo from './Logo'
 import Pesquisa from './Pesquisa'
-import {Button} from "@chakra-ui/react";
 
 export default function Navbar() {
     return (
@@ -11,7 +10,8 @@ export default function Navbar() {
                 </div>
                 <div className={`flex space-x-3`}>
                     <Pesquisa colorScheme={`blue`} />
-                    <Button colorScheme='blue'>Login</Button>
+                    {/*Refazer com componentes nativos e tailwind */}
+                    <span>Botão login</span>
                 </div>
             </nav>
         </header>

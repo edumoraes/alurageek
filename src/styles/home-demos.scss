@@ -1,0 +1,75 @@
+// Common
+.banner-box {
+  width: 100%;
+}
+.banner-box .atropos-inner {
+  z-index: 1;
+}
+.banner-box img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  z-index: 1;
+  transform-style: preserve-3d;
+  pointer-events: none;
+  max-width: none;
+}
+.banner-box .atropos-shadow {
+  opacity: 0.5;
+  transform: translate3d(0, 0, -1px);
+}
+
+// Banner Box
+.banner-box {
+  aspect-ratio: 360 / 192;
+  @media (min-width: 768px) {
+    aspect-ratio: 768 / 352;
+  }
+  @media (min-width: 1440px) {
+    aspect-ratio: 1440 / 358;
+  }
+}
+
+
+
+.banner-box .atropos-inner {
+  //border-radius: 12px;
+}
+.banner-box .banner-box-bg img {
+  transform: scale(1.1);
+  position: relative;
+}
+
+.banner-box-title {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: flex-end;
+  padding-left: 1rem;
+  padding-bottom: 5rem;
+  color: #ffffff;
+}
+.banner-box-button {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  height: 100%;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: flex-end;
+  padding-left: 1rem;
+  padding-bottom: 4rem;
+  color: #ffffff;
+}

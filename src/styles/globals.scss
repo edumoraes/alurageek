@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Inter, -apple-system, system-ui, Helvetica Neue, Helvetica, Arial;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@import 'atropos/scss';
+@import './home-header.scss';
+@import './home-demos.scss';
+@import './precode.scss';
+@import './table.scss';
+@import './prose.scss';
+@import "./swiper.scss";

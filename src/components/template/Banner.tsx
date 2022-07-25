@@ -1,4 +1,3 @@
-import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -86,21 +85,34 @@ export default function Banner() {
         </Swiper>*/
         <Atropos className="banner-box" rotateTouch="scroll-y">
             <div className="banner-box-bg" data-atropos-offset="-5">
-                <img src={`https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80`} alt="banner" />
+
+                <img src={`https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80`} alt="banner"
+                    className={`object-cover object-center`}
+                />
+
             </div>
             <div
                 className="banner-box-title"
                 data-atropos-offset="1"
             >
-                <h1 className="text-2xl font-bold text-slate-50">Dezembro Promocional</h1>
-                <p>Produtos selecionados com 33% de desconto</p>
+
+                <h1 className="text-2xl font-bold text-slate-50 z-10">Dezembro Promocional</h1>
+                <p className={`z-10`}>Produtos selecionados com 33% de desconto</p>
+                <div
+                    className="
+                        absolute bottom-0 left-0
+                        z-0
+                        w-full h-4/6
+                        bg-blend-multiply
+                        banner-box-bg bg-gradient-to-t from-[#000000]/80 to-[#000000]/0"
+                />
             </div>
             <div
                 className="banner-box-button"
                 data-atropos-offset="6"
             >
                 <Link href="#">
-                    <a className="bg-primary text-white px-4 py-2 md:px-8 md:py-4 font-bold md:text-xl inline-flex hover:bg-opacity-70 duration-200 translate-y-full">
+                    <a className="bg-primary-400 text-white px-4 py-2 md:px-8 md:py-4 font-bold md:text-xl inline-flex hover:bg-opacity-70 duration-200 translate-y-full">
                         Ver Consoles
                     </a>
                 </Link>

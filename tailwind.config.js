@@ -30,19 +30,13 @@ module.exports = {
       },
 
     },
-
-    extend: {
-      colors: {
-        primary: '#B53DF5',
-        'primary-dark': '#5814a2',
-        'page-dark-bg': '#190330',
-        'footer-bg': '#110221',
-      },
-    },
   },
   variants: {
     extend: {},
   },
   // eslint-disable-next-line
-  plugins: [require('@tailwindcss/typography')],
+  plugins: [
+      require('@tailwindcss/typography'),
+      require('@tailwindcss/forms'),
+  ],
 }

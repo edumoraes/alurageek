@@ -83,21 +83,49 @@ export default function Banner() {
                 </Atropos>
             </SwiperSlide>
         </Swiper>*/
-        <Atropos className="banner-box" rotateTouch="scroll-y">
-            <div className="banner-box-bg" data-atropos-offset="-5">
+        <Atropos className="relative w-full aspect-[360/192] md:aspect-[768/352] 2xl:aspect-[1440/358]" rotateTouch="scroll-y">
+            <div className="flex items-center w-full h-full" data-atropos-offset="-1">
 
                 <img src={`https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80`} alt="banner"
-                    className={`object-cover object-center`}
+                    className={
+                        `w-full
+                        z-10 transform pointer-events-none
+                        transform scale-110 object-contain object-center`
+                    }
                 />
 
             </div>
             <div
-                className="banner-box-title"
                 data-atropos-offset="1"
-            >
+                className="
+                    absolute left-0 top-0 w-full h-full z-20 p-4
+                    flex justify-center
+                    text-claro-100
+                    md:p-8
+                    xl:px-0
+                "
 
-                <h1 className="text-2xl font-bold text-slate-50 z-10">Dezembro Promocional</h1>
-                <p className={`z-10`}>Produtos selecionados com 33% de desconto</p>
+            >
+                <div className={`flex flex-col space-y-2 w-full max-w-5xl justify-end z-30`}>
+                    <h1 className="text-[1.375rem] font-bold md:text-[3.25rem]">Dezembro Promocional</h1>
+                    <p className={`text-sm font-semibold md:text-[1.375rem] md:font-bold`}>Produtos selecionados com 33% de desconto</p>
+                    <Link href="#">
+                        <a className="
+                        w-fit
+                        bg-primary-400
+                        font-semibold
+
+                        py-3 px-4
+                        hover:bg-opacity-70
+                        duration-200
+                        lg:p-4 lg:font-normal
+                    "
+                        >
+                            Ver Consoles
+                        </a>
+                    </Link>
+                </div>
+
                 <div
                     className="
                         absolute bottom-0 left-0
@@ -106,16 +134,6 @@ export default function Banner() {
                         bg-blend-multiply
                         banner-box-bg bg-gradient-to-t from-[#000000]/80 to-[#000000]/0"
                 />
-            </div>
-            <div
-                className="banner-box-button"
-                data-atropos-offset="6"
-            >
-                <Link href="#">
-                    <a className="bg-primary-400 text-white px-4 py-2 md:px-8 md:py-4 font-bold md:text-xl inline-flex hover:bg-opacity-70 duration-200 translate-y-full">
-                        Ver Consoles
-                    </a>
-                </Link>
             </div>
         </Atropos>
     );

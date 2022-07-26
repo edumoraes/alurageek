@@ -1,12 +1,15 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 
+import {IconeArrowSmRight} from "../components/icons";
+
 import styles from '../styles/Home.module.scss'
 
 import Navbar from "../components/template/Navbar";
 import Banner from "../components/template/Banner";
 import Logo from "../components/template/Logo";
 import Link from "next/link";
+import ListaProdutos from "../components/template/ListaProdutos";
 
 
 const Home: NextPage = () => {
@@ -22,8 +25,9 @@ const Home: NextPage = () => {
 
         <main>
             <Banner></Banner>
-            <div>
-                <div className={`conteineTitulo`}>
+            <div className={`container mx-auto min-w-[328px] max-w-[1136px] px-4 md:px-8`}>
+                <ListaProdutos icone={IconeArrowSmRight} />
+                {/*<div className={`conteineTitulo`}>
                     <h3>Título de seção</h3>
                     <button>Ver mais</button>
                 </div>
@@ -60,7 +64,7 @@ const Home: NextPage = () => {
                             <button>Ver produto</button>
                         </div>
                     </div>
-                </div>
+                </div>*/}
             </div>
         </main>
         <footer>

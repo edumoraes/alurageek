@@ -3,7 +3,7 @@ import Menuitem from "./Menuitem";
 
 export default function Footer() {
     return(
-        <footer className={`bg-primary-100 py-4`}>
+        <footer className={`bg-primary-100 py-4 container mx-auto min-w-[328px] max-w-[1136px] px-4 md:px-8`}>
             <nav className={`flex flex-col items-center gap-4`}>
                 <Logo largura={172} altura={50} />
                 <div>

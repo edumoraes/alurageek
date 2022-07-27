@@ -32,7 +32,7 @@ const Home: NextPage = () => {
             </div>
         </main>
 
-        <Footer className={`container mx-auto min-w-[328px] max-w-[1136px] px-4 md:px-8`} />
+        <Footer />
 
 
     </div>

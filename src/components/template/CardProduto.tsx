@@ -1,8 +1,13 @@
 import Link from "next/link";
-export default function CardProduto() {
+
+interface CardProdutoProps {
+    url: string
+}
+
+export default function CardProduto(props: CardProdutoProps) {
     return(
-        <div className={`flex flex-col w-[156px] md:w-[164px] lg:w-[176px] bg-primary-200`}>
-            <img src="https://i.promobit.com.br/268/145188931616505394841644644791.png" alt="PlayStation 5"
+        <div className={`flex flex-col w-[156px] md:w-[164px] lg:w-[176px] gap-2`}>
+            <img src={props.url} alt="PlayStation 5"
                 className={`w-full aspect-[156/174] md:aspect-[164/174] lg:aspect-[176/174] object-cover object-center`}
             />
             <div className={`flex flex-col`}>

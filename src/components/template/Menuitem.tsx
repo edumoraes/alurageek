@@ -5,7 +5,7 @@ interface PropsMenuitem {
     texto: string
     icone?: any
     className?: string
-    onClik?: (evento: any) => {}
+    onClick?: (evento: any) => {}
 }
 export default function Menuitem(props: PropsMenuitem) {
     
@@ -20,7 +20,7 @@ export default function Menuitem(props: PropsMenuitem) {
 
     return (    
         
-        <li onClick={props.onClik} className={`cursor-pointer`}>
+        <li onClick={props.onClick} className={`cursor-pointer`}>
             {props.url ? (
             <Link href={props.url}>
                 {renderizarLink()}

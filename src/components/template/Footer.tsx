@@ -1,13 +1,16 @@
 import Logo from "./Logo";
 import Menuitem from "./Menuitem";
+import FaleConosco from "./FaleConosco";
 
 export default function Footer() {
     return(
-        <footer className={`bg-primary-100 py-4 container mx-auto min-w-[328px] max-w-[1136px] px-4 md:px-8`}>
-            <nav className={`flex flex-col items-center gap-4`}>
-                <Logo largura={172} altura={50} />
+        <footer className={`flex flex-col container mx-auto min-w-[328px] max-w-[1136px] bg-primary-100 gap-4 py-4 bg-primary-100
+            md:flex-row lg:gap-28`
+        }>
+            <nav className={`flex flex-col items-center gap-4 px-4 md:px-8 md:items-start lg:flex-row lg:gap-28`}>
+                <Logo largura={172} altura={50}/>
                 <div>
-                    <ul className={`flex flex-col text-center text-base font-medium text-escuro-200 gap-4`}>
+                    <ul className={`flex flex-col text-center text-base font-medium text-escuro-200 gap-4 md:text-left`}>
                         <Menuitem texto={`Quem somos nós`} />
                         <Menuitem texto={`Política de privacidade`} />
                         <Menuitem texto={`Programa de fidelidade`} />
@@ -17,17 +20,7 @@ export default function Footer() {
                     </ul>
                 </div>
             </nav>
-            <form action="">
-                <label htmlFor="first">Nome:</label>
-                <input type="text" id="first" name="first"/>
-                <label  htmlFor="last">Escreva sua mensagem:</label>
-                <input type="text" id="last" name="last"/>
-                <button type="submit">Submit</button>
-            </form>
-            <article>
-                <span>Desenvolvido por Eduardo de Moraes</span>
-                <span>2022</span>
-            </article>
+            <FaleConosco />
         </footer>
     )
 }

@@ -31,8 +31,14 @@ const Home: NextPage = () => {
                 <ListaProdutos icone={IconeArrowSmRight} />
             </div>
         </main>
+        <div className={`bg-primary-100`}>
+            <Footer />
+        </div>
 
-        <Footer />
+        <div className={`flex flex-col items-center bg-claro-100 px-4 md:px-8 py-4`}>
+            <span>Desenvolvido por Eduardo de Moraes</span>
+            <span>2022</span>
+        </div>
 
 
     </div>

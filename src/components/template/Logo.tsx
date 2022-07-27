@@ -9,7 +9,7 @@ interface LogoProps {
 
 export default function Logo(props: LogoProps) {
     return (
-        <Link href="#">
+        <Link href="/">
             <a>
                 <Image
                     src="/alura-geek.svg"

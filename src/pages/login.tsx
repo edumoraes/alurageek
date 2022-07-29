@@ -25,7 +25,7 @@ export default function Login() {
                                 `w-fit text-claro-100 bg-primary-400
                                 font-semibold py-3 px-4 hover:bg-opacity-70
                                 duration-200 lg:p-4 lg:font-normal`
-                            } type="submit">Enviar mensagem</button>
+                            } type="submit">Entrar</button>
                         </div>
 
                     </div>

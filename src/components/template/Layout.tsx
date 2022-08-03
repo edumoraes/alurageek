@@ -1,21 +1,24 @@
-import Navbar from './Navbar'
-import Conteudo from './Conteudo'
-import Banner from "./Banner";
+import Header from "../organisms/Header";
+import Footer from "../organisms/Footer";
 
 interface LayoutProps {
-    titulo: string
-    subtitulo: string
     children?: any
 }
 
 export default function Layout(props: LayoutProps) {
     return (
-        <div>
-            <Navbar />
-            <Conteudo>
-                <Banner />
+        <div className={`flex flex-col min-h-screen justify-between`}>
+            <header className={`bg-claro-100`}>
+                <Header />
+            </header>
+
+            <main className={`flex-1`}>
                 {props.children}
-            </Conteudo>
+            </main>
+
+            <footer>
+                <Footer />
+            </footer>
         </div>
     )
 }

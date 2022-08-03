@@ -7,7 +7,7 @@ interface PropsMenuitem {
     className?: string
     onClick?: (evento: any) => {}
 }
-export default function Menuitem(props: PropsMenuitem) {
+export default function MenuItem(props: PropsMenuitem) {
     
     const renderizarLink = () => {
         return (

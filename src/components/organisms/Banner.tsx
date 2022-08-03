@@ -12,8 +12,18 @@ import "swiper/css/pagination";
 // import required modules
 import { Pagination } from "swiper";
 import Link from "next/link";
+import Button from "../molecules/Button";
 
-export default function Banner() {
+interface BannerProps{
+    img: string
+    title: string
+    subtitle: string
+    btnName: string
+    btnType: string
+    url: string
+}
+
+export default function Banner(props: BannerProps) {
     return (
         /*<Swiper
             slidesPerView={1}
@@ -86,7 +96,7 @@ export default function Banner() {
         <Atropos className="relative w-full aspect-[360/192] md:aspect-[768/352] 2xl:aspect-[1440/358]" rotateTouch="scroll-y">
             <div className="flex items-center w-full h-full" data-atropos-offset="-1">
 
-                <img src={`https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80`} alt="banner"
+                <img src={props.img} alt="banner"
                     className={
                         `w-full
                         z-10 transform pointer-events-none
@@ -106,24 +116,10 @@ export default function Banner() {
                 "
 
             >
-                <div className={`flex flex-col space-y-2 w-full max-w-5xl justify-end z-30`}>
-                    <h1 className="text-[1.375rem] font-bold md:text-[3.25rem]">Dezembro Promocional</h1>
-                    <p className={`text-sm font-semibold md:text-[1.375rem] md:font-bold`}>Produtos selecionados com 33% de desconto</p>
-                    <Link href="#">
-                        <a className="
-                        w-fit
-                        bg-primary-400
-                        font-semibold
-
-                        py-3 px-4
-                        hover:bg-opacity-70
-                        duration-200
-                        lg:p-4 lg:font-normal
-                    "
-                        >
-                            Ver Consoles
-                        </a>
-                    </Link>
+                <div className={`flex flex-col space-y-2 w-full container mx-auto min-w-[328px] max-w-[1136px] justify-end z-30`}>
+                    <h1 className="text-[1.375rem] font-bold md:text-[3.25rem]">{props.title}</h1>
+                    <p className={`text-sm font-semibold md:text-[1.375rem] md:font-bold`}>{props.subtitle}</p>
+                    <Button btnType={props.btnType} href={props.url} name={props.btnName} />
                 </div>
 
                 <div

@@ -3,26 +3,41 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
 
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: Inter, -apple-system, system-ui, Helvetica Neue, Helvetica, Arial;
-  -webkit-font-smoothing: antialiased;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
+@layer components {
+  .btn-primary {
+    @apply
+    bg-primary-400
+    border
+    border-primary-400
+    text-sm
+    font-semibold
+    text-claro-100
+    py-3 px-4
+    w-fit
+    hover:bg-opacity-70
+    md:p-4 md:text-base md:font-normal
+    inline-flex
+    duration-200
+  }
+  .btn-bare {
+    @apply
+    bg-transparent
+    border
+    border-primary-400
+    text-sm
+    font-semibold
+    text-primary-400
+    py-3 px-4
+    w-fit
+    hover:bg-primary-200
+    md:p-4 md:text-base md:font-normal
+    inline-flex
+    duration-200
+  }
 }
 
 @import 'atropos/scss';
 @import './home-header.scss';
 @import './precode.scss';
-@import './table.scss';
 @import './prose.scss';
 @import "./swiper.scss";

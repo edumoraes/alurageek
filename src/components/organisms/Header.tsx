@@ -13,7 +13,7 @@ export default function Header() {
                 <div className={`flex pl-3 items-center space-x-3 flex-row-reverse flex-grow sm:flex-row sm:justify-between`}>
                     <Pesquisa icone={IconSearch} />
 
-                    <Button btnType={`a-secondary`} name={`Login`} href={`/login`} />
+                    <Button  btnType={`a-secondary`} name={`Login`} href={`/login`} />
                 </div>
             </nav>
         </header>

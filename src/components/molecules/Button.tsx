@@ -2,7 +2,7 @@ import Link from "next/link";
 
 interface ButtonProps{
     name: string
-    href?: string
+    href: string
     btnType?: string
     onClick?: any
 }

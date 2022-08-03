@@ -9,7 +9,7 @@ export default function FormLogin() {
                 <TextField type={`email`} id={`email`} label={`Escreva seu email:`} />
                 <TextField type={`password`} id={`password`} label={`Escreva sua senha:`} />
                 <div className={`flex flex-col items-center`}>
-                    <Button name={`Entrar`} btnType={`btn-primary`} />
+                    <Button href={`#`} name={`Entrar`} btnType={`btn-primary`} />
                 </div>
 
             </div>

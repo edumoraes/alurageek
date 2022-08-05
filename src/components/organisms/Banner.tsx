@@ -12,7 +12,7 @@ import "swiper/css/pagination";
 // import required modules
 import { Pagination } from "swiper";
 import Link from "next/link";
-import Button from "../molecules/Button";
+import AncorButton from "../molecules/AncorButton";
 
 interface BannerProps{
     img: string
@@ -119,7 +119,7 @@ export default function Banner(props: BannerProps) {
                 <div className={`flex flex-col space-y-2 w-full container mx-auto min-w-[328px] max-w-[1136px] justify-end z-30`}>
                     <h1 className="text-[1.375rem] font-bold md:text-[3.25rem]">{props.title}</h1>
                     <p className={`text-sm font-semibold md:text-[1.375rem] md:font-bold`}>{props.subtitle}</p>
-                    <Button btnType={props.btnType} href={props.url} name={props.btnName} />
+                    <AncorButton btnType={props.btnType} href={props.url} name={props.btnName} />
                 </div>
 
                 <div

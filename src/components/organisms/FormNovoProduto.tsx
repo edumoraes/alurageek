@@ -1,5 +1,5 @@
 import TextField from "../molecules/TextField";
-import Button from "../molecules/Button";
+import AncorButton from "../molecules/AncorButton";
 import {IconPlusSm} from "../atoms/icons";
 
 export default function FormNovoProduto() {
@@ -14,10 +14,10 @@ export default function FormNovoProduto() {
                         className={`absolute w-full h-full opacity-0 cursor-pointer`}
                     />
                 </div>
-                <TextField type={`email`} id={`email`} label={`Escreva seu email:`} />
-                <TextField type={`password`} id={`password`} label={`Escreva sua senha:`} />
+                <TextField required={true} type={`email`} id={`email`} label={`Escreva seu email:`} />
+                <TextField required={true} type={`password`} id={`password`} label={`Escreva sua senha:`} />
                 <div className={`flex flex-col items-center`}>
-                    <Button href={`#`} name={`Entrar`} btnType={`btn-primary`} />
+                    <AncorButton href={`#`} name={`Entrar`} btnType={`btn-primary`} />
                 </div>
 
             </div>

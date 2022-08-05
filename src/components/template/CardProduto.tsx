@@ -1,6 +1,8 @@
 import Link from "next/link";
 
 interface CardProdutoProps {
+    nomeProduto: string
+    preco: string
     url: string
 }
 
@@ -11,8 +13,8 @@ export default function CardProduto(props: CardProdutoProps) {
                 className={`w-full aspect-[156/174] md:aspect-[164/174] lg:aspect-[176/174] object-contain object-center`}
             />
             <div className={`flex flex-col`}>
-                <span className={`text-sm`}>Nome do Produto</span>
-                <span className={`text-base font-bold text-escuro-200`}>R$ 10,20</span>
+                <span className={`text-sm`}>{props.nomeProduto}</span>
+                <span className={`text-base font-bold text-escuro-200`}>{props.preco}</span>
                 <Link href="#">
                     <a className={`text-sm font-bold text-primary-400`}>
                         Ver produto

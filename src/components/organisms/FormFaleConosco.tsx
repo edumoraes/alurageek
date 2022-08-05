@@ -11,9 +11,9 @@ export default function FormFaleConosco(props: FaleConoscoProps) {
         >
             <span className={`text-base font-bold text-escuro-200`}>Fale consoco</span>
 
-            <TextField label={"Nome:"} id={"first"} type={"text"} />
+            <TextField label={"Nome:"} id={"first"} type={"text"} required={true} maxlength={40} />
 
-            <TextField label={"Escreva sua mensagem:"} id={"mesage"} type={"text"} />
+            <TextField label={"Escreva sua mensagem:"} id={"mesage"} type={"text"} required={true} maxlength={120} />
 
             <button className={
                 `w-fit text-claro-100 bg-primary-400

@@ -8,6 +8,10 @@ interface TextFieldProps {
     label: string
     type: string
     id: string
+    required: boolean
+    minlength?: number
+    maxlength?: number
+    pattern?: string
 }
 
 export default function TextField(props: TextFieldProps) {
@@ -28,7 +32,7 @@ export default function TextField(props: TextFieldProps) {
                 <label htmlFor={props.id} className={`absolute top-2 left-3 ${tamanhoLabel} font-base text-escuro-100`}
                 >{props.label}</label>
 
-                <TextInput id={props.id} onChange={diminuiLabel} type={props.type} />
+                <TextInput id={props.id} onChange={diminuiLabel} type={props.type} required={props.required} pattern={props.pattern} maxlength={props.maxlength} minlength={props.minlength} />
 
             </div>
 

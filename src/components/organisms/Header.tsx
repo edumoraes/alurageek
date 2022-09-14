@@ -1,7 +1,7 @@
 import Logo from '../template/Logo'
 import Pesquisa from '../molecules/Pesquisa'
 import {IconSearch} from "../atoms/icons";
-import AncorButton from "../molecules/AncorButton";
+import AnchorButton from "../molecules/AnchorButton";
 
 export default function Header() {
     return (
@@ -13,7 +13,7 @@ export default function Header() {
                 <div className={`flex pl-3 items-center space-x-3 flex-row-reverse flex-grow sm:flex-row sm:justify-between`}>
                     <Pesquisa icone={IconSearch} />
 
-                    <AncorButton btnType={`a-secondary`} name={`Login`} href={`/login`} />
+                    <AnchorButton btnType={`anchor-secondary`} name={`Login`} href={`/login`} />
                 </div>
             </nav>
         </header>

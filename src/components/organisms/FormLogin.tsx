@@ -1,5 +1,5 @@
 import TextField from "../molecules/TextField";
-import AncorButton from "../molecules/AncorButton";
+import AnchorButton from "../molecules/AnchorButton";
 
 export default function FormLogin() {
     return(
@@ -9,7 +9,7 @@ export default function FormLogin() {
                 <TextField required={true} type={`email`} id={`email`} label={`Escreva seu email:`} />
                 <TextField required={true} type={`password`} id={`password`} label={`Escreva sua senha:`} />
                 <div className={`flex flex-col items-center`}>
-                    <AncorButton href={`#`} name={`Entrar`} btnType={`btn-primary`} />
+                    <AnchorButton href={`#`} name={`Entrar`} btnType={`btn-primary`} />
                 </div>
 
             </div>

@@ -12,7 +12,7 @@ export default function Layout(props: LayoutProps) {
                 <Header />
             </header>
 
-            <main className={`flex-1`}>
+            <main className={`flex-1 py-4`}>
                 {props.children}
             </main>
 

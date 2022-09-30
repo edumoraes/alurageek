@@ -24,10 +24,6 @@ const Home: NextPage = () => {
         url: "#consoles"
     }
 
-
-
-
-
   return (
     <div>
 
@@ -39,7 +35,13 @@ const Home: NextPage = () => {
 
         <Layout >
 
-            <Banner url={bannerProps.url} btnType={bannerProps.btnType} btnName={bannerProps.btnName} img={bannerProps.img} subtitle={bannerProps.subtitle} title={bannerProps.title} />
+          <Banner 
+          url={bannerProps.url} 
+          btnType={bannerProps.btnType} 
+          btnName={bannerProps.btnName} 
+          img={bannerProps.img} 
+          subtitle={bannerProps.subtitle} 
+          title={bannerProps.title} />
 
             <div className={`container mx-auto min-w-[328px] max-w-[1136px] px-4 md:px-8`}>
 
@@ -49,7 +51,7 @@ const Home: NextPage = () => {
 
                 <SectionConsoles />
 
-                </div>
+            </div>
 
         </Layout>
 
